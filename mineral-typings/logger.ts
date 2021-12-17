@@ -1,5 +1,5 @@
 /*
- * @mineral/logger
+ * @mineralts/logger
  *
  * (c) Baptiste Parmantier
  *
@@ -30,7 +30,6 @@ declare module '@ioc:Mineral/Core/Logger' {
     fatal(message: string, ...values: any[]): void
     fatal(mergingObject: any, message: string, ...values: any[]): void
   }
-
   const Logger: LoggerContract
   export default Logger
 }

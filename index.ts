@@ -9,5 +9,5 @@
  */
 
 
-import Logger from './Logger'
+import Logger from './src/Logger'
 export default Logger

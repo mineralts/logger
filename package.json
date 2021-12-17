@@ -1,8 +1,13 @@
 {
   "name": "@mineralts/logger",
-  "version": "1.0.0",
-  "type": "module",
+  "version": "1.0.2",
   "main": "build/index.js",
+  "files": [
+    "build/mineral-typings",
+    "build/src",
+    "build/index.d.ts",
+    "build/index.js"
+  ],
   "scripts": {
     "build": "tsc"
   },
