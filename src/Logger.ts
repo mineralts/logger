@@ -8,8 +8,10 @@
  */
 
 import Pino from 'pino'
+import Color from './Color'
 
 export default class Logger {
+  public colors: Color = new Color()
   public pino: Pino.Logger = Pino({
     transport: {
       target: 'pino-pretty',
