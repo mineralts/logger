@@ -8,7 +8,24 @@
  */
 
 declare module '@ioc:Mineral/Core/Logger' {
+  interface Color {
+    bright (value: string): string
+    dim (value: string): string
+    underscore (value: string): string
+    blink (value: string): string
+    reverse (value: string): string
+    black (value: string): string
+    red (value: string): string
+    green (value: string): string
+    yellow (value: string): string
+    blue (value: string): string
+    magenta (value: string): string
+    cyan (value: string): string
+    white (value: string): string
+  }
+
   export interface LoggerContract {
+    colors: Color
     log(level: string, message: string, ...values: any[]): void
     log(level: string, mergingObject: any, message: string, ...values: any[]): void
 
